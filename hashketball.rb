@@ -172,6 +172,8 @@ def num_points_scored(player_name)
 end #num_points_scored
 
 def shoe_size(player_name)
+  
+
  game_hash.each do |location, team_data|
     #puts "team data = #{team_data}"
    
