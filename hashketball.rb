@@ -141,7 +141,7 @@ def get_player_stats(player_name, stat_value)
     
     end
   end  
-end
+end #get_player_stats
 
 def num_points_scored(player_name)
   
