@@ -324,9 +324,11 @@ def big_shoe_rebounds
     
     end #end team_data.do
   end #end game_hash.do
+  
   #puts "biggest_ss_player = #{biggest_ss_player}" 
   rebounds = get_player_stat_value(biggest_ss_player, :rebounds)
   #puts "rebounds = #{rebounds}"
+  
   rebounds
 end #big_shoe_rebounds
 
