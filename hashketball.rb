@@ -151,7 +151,6 @@ end #num_points_scored
 def shoe_size(player_name)
   shoe_size_value = get_player_stat_value(player_name, :shoe)
   shoe_size_value
-  
 end #shoe_size
 
 def team_colors(team_name)
