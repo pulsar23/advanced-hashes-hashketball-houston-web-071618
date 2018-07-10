@@ -117,7 +117,7 @@ def game_hash
   
 end #game_hash
 
-def get_player_stats(player_name, stat_value)
+def get_player_stat_value(player_name, stat_value)
  game_hash.each do |location, team_data|
     #puts "team data = #{team_data}"
    
@@ -141,7 +141,7 @@ def get_player_stats(player_name, stat_value)
     
     end
   end  
-end #get_player_stats
+end #get_player_stat_value
 
 def num_points_scored(player_name)
   
