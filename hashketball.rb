@@ -144,14 +144,11 @@ def get_player_stat_value(player_name, stat_value)
 end #get_player_stat_value
 
 def num_points_scored(player_name)
-  
   points_value = get_player_stat_value(player_name, :points)
   points_value
-  
 end #num_points_scored
 
 def shoe_size(player_name)
-  
   shoe_size_value = get_player_stat_value(player_name, :shoe)
   shoe_size_value
   
