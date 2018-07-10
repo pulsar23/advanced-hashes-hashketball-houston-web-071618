@@ -173,30 +173,8 @@ end #num_points_scored
 
 def shoe_size(player_name)
   
-
- game_hash.each do |location, team_data|
-    #puts "team data = #{team_data}"
-   
-    team_data.each do |attribute, data|
-        if attribute == :players
-          #puts "attribute = #{attribute}"
-          #puts "data = #{data}"
-          data.each do |player, info|
-            if player_name == player
-               #puts "info = #{info}"
-               info.each do |stats, value|
-                 if stats == :shoe
-                   #puts "stats = #{stats}"
-                   #puts "value = #{value}"
-                   return value
-                 end
-                end
-            end
-          end
-        end
-    
-    end
-  end  
+value_shoe_size = get_player_stat_value(player_name, :shoe)
+value_shoe_size
   
 end #shoe_size
 
