@@ -117,7 +117,7 @@ def game_hash
   
 end #game_hash
 
-def num_points_scored(player_name)
+def get_player_stat_value(player_name, stat_value)
   
   game_hash.each do |location, team_data|
     #puts "team data = #{team_data}"
@@ -130,7 +130,7 @@ def num_points_scored(player_name)
             if player_name == player
                #puts "info = #{info}"
                info.each do |stats, value|
-                 if stats == :points
+                 if stats == stat_value
                    #puts "stats = #{stats}"
                    #puts "value = #{value}"
                    return value
@@ -142,6 +142,13 @@ def num_points_scored(player_name)
     
     end
   end  
+  
+end #get_player_stat_value
+
+def num_points_scored(player_name)
+  
+  value = get_player_stat_value(player_name, :points)
+  value
   
 end #num_points_scored
 
