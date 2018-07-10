@@ -118,7 +118,29 @@ def game_hash
 end #game_hash
 
 def get_player_stats(player_name, stat_value)
-
+ game_hash.each do |location, team_data|
+    #puts "team data = #{team_data}"
+   
+    team_data.each do |attribute, data|
+        if attribute == :players
+          #puts "attribute = #{attribute}"
+          #puts "data = #{data}"
+          data.each do |player, info|
+            if player_name == player
+               #puts "info = #{info}"
+               info.each do |stats, value|
+                 if stats == stat_value
+                   #puts "stats = #{stats}"
+                   #puts "value = #{value}"
+                   return value
+                 end
+                end
+            end
+          end
+        end
+    
+    end
+  end  
 end
 
 def num_points_scored(player_name)
