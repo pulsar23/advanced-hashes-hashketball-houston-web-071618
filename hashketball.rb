@@ -117,7 +117,7 @@ def game_hash
   
 end #game_hash
 
-def get_player_stats
+def get_player_stats(player_name, stat_value)
 end
 
 def num_points_scored(player_name)
